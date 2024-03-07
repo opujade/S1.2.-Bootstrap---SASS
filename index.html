@@ -33,7 +33,8 @@
             <a href="#" class="nav-link nav-item-text">Contact</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="custom-outline-btn btn btn-secondary outline nav-item-text shadow">Login</button>
+            <button type="button"
+              class="custom-outline-btn btn btn-secondary outline nav-item-text shadow">Login</button>
           </li>
         </ul>
       </div>
@@ -42,7 +43,7 @@
 
   <div class="container my-5 mx-auto">
     <hero class="hero row align-items-center">
-      <div class="col-12 col-md-6 hero-txt py-md-5 pe-md-5">
+      <div class="mb-5 col-12 col-md-6 hero-txt py-md-5 pe-md-5">
         <h1 class="mb-3">A Simple Bookmark Manager</h1>
         <p class="mb-4 fs-5 opacity-75">A clean and simple interface to organize your favourite websites. Open a new
           browser tab and see your sites
@@ -55,6 +56,70 @@
       </div>
     </hero>
   </div>
+
+
+  <section class="container">
+    <div class="mx-auto text-center section-heading">
+      <h2 class="mb-3">Features</h2>
+      <p class="fs-5 opacity-75">Our aim is to make it quick and easy for you to access your favourite websites. Your
+        bookmarks sync between your devices so you can access them on the go.</p>
+    </div>
+
+    <ul class="nav nav-underline justify-content-center flex-column flex-md-row text-center gap-md-0 my-5" id="features-nav">
+      <li class="nav-item border-bottom">
+        <a href="#simple-bookmarking" data-bs-toggle="tab" class="px-5 py-4 nav-link active">Simple Bookmarking</a>
+      </li>
+      <li class="nav-item border-bottom">
+        <a href="#speedy-searching" data-bs-toggle="tab" class="px-5 py-4 nav-link">Speady Searching</a>
+      </li>
+      <li class="nav-item border-bottom">
+        <a href="#easy-sharing" data-bs-toggle="tab" class="px-5 py-4 nav-link">Easy Sharing</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="simple-bookmarking">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid shadow" src="svg/illustration-features-tab-1.svg" alt="Features 1 Illustration">
+          </div>
+          <div class="col-md-6 text-md-start text-center">
+            <h2 class="my-4">Bookmark in one click</h2>
+            <p class="mb-4 fs-5 opacity-75">Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.</p>
+            <button type="button" class="btn btn-primary shadow mb-2 mb-xl-0">More Info</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="speedy-searching">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid shadow" src="svg/illustration-features-tab-2.svg" alt="Features 2 Illustration">
+          </div>
+          <div class="col-md-6">
+            <h2 class="my-4">Intelligent search</h2>
+            <p class="mb-4 fs-5 opacity-75">Our powerful search feature will help you find saved sites in no time at all. No need to trawil through all of your bookmarks.</p>
+            <button type="button" class="btn btn-primary shadow mb-2 mb-xl-0">More Info</button>
+          </div>
+        </div>  
+      </div>
+      <div class="tab-pane" id="easy-sharing">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid shadow" src="svg/illustration-features-tab-3.svg" alt="Features 3 Illustration">
+          </div>
+          <div class="col-md-6">
+            <h2 class="my-4">Share your bookmarks</h2>
+            <p class="mb-4 fs-5 opacity-75">Easily search your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+            <button type="button" class="btn btn-primary shadow mb-2 mb-xl-0">More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer style="height: 1200px;"></footer>
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>

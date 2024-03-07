@@ -11982,19 +11982,16 @@ textarea.form-control-lg {
   letter-spacing: 0.075rem;
 }
 
-.custom-outline-btn .btn .btn-primary:hover {
-  background-color: transparent;
-  color: #5265E1;
+@media (max-width: 767.98px) {
+  .hero.row {
+    flex-direction: column-reverse;
+  }
 }
-
-.btn-light {
-  background-color: #f8f9fa;
+@media (max-width: 1199.98px) {
+  .hero.row {
+    text-align: center;
+  }
 }
-.btn-light:hover {
-  background-color: transparent;
-  border-color: #212529;
-}
-
 .btn-primary:hover {
   background-color: transparent !important;
   color: #5265E1 !important;
@@ -12016,16 +12013,30 @@ textarea.form-control-lg {
   color: #FA5959 !important;
 }
 
-@media (max-width: 767.98px) {
-  .hero.row {
-    flex-direction: column-reverse;
+@media (min-width: 768px) {
+  .section-heading {
+    width: 50%;
   }
 }
-@media (max-width: 1199.98px) {
-  .hero.row {
-    text-align: center;
+@media (min-width: 1400px) {
+  #features-nav .nav-item {
+    width: 20%;
   }
 }
+#features-nav .nav-link {
+  font-weight: 500;
+  color: #212529;
+  opacity: 75%;
+  border-bottom: none;
+}
+#features-nav .nav-link.active {
+  opacity: 90%;
+  border-bottom: 0.3rem solid #FA5959;
+}
+#features-nav .nav-link.active:hover {
+  opacity: 100%;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

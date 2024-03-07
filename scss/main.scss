@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// Variables de color
+// Custom Variables
 $primary: #5265E1;
 $secondary: #FA5959;
 
@@ -17,13 +17,10 @@ $btn-padding-y: .4rem;
 $h1-font-size: $font-size-base * 3;
 $headings-font-weight: bold;
 
-
+// Nav Section
 .nav-link:hover:not(.active) {
     color: $secondary !important;
 }
-
-
-
 
 .navbar {
     .navbar-toggler {
@@ -35,7 +32,6 @@ $headings-font-weight: bold;
     }
 
     .navbar-nav {
-   
         .nav-item-text {
             text-transform: uppercase;
             font-size: .9em;
@@ -45,24 +41,20 @@ $headings-font-weight: bold;
     }
 }
 
-// .hero.row {
-.custom-outline-btn .btn .btn-primary {
-    &:hover {
-        background-color: transparent;
-        color: $primary;
+// Hero Media Breakpoints
+@include media-breakpoint-down(md) {
+    .hero.row {
+        flex-direction: column-reverse;
     }
 }
 
-.btn-light {
-    background-color: $gray-100;
-
-    &:hover {
-        background-color: transparent;
-        border-color: $body-color;
+@include media-breakpoint-down(xl) {
+    .hero.row {
+        text-align: center;
     }
 }
 
-// }
+// Button Customization
 .btn-primary {
     &:hover {
         background-color: transparent !important;
@@ -88,15 +80,34 @@ $headings-font-weight: bold;
     }
 }
 
-@include media-breakpoint-down(md) {
-    .hero.row {
-        flex-direction: column-reverse;
+// Features Tab Section
+@include media-breakpoint-up(md) {
+    .section-heading{
+        width: 50%;
     }
 }
 
-@include media-breakpoint-down(xl) {
-    .hero.row {
-        text-align: center;
+#features-nav {
+    @include media-breakpoint-up(xxl) {
+        .nav-item {
+            width: 20%;
+        }
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: $body-color;
+        opacity: 75%;
+        border-bottom: none;
+    }
+
+    .nav-link.active {
+        opacity: 90%;
+        border-bottom: .3rem solid $secondary;
+
+        &:hover {
+            opacity: 100%;
+        }
     }
 }
 
