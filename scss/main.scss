@@ -1,0 +1,103 @@
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Variables de color
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+);
+
+$btn-font-weight: bold;
+$btn-border-width: .15rem;
+$btn-padding-x: 2.5rem;
+$btn-padding-y: .4rem;
+$h1-font-size: $font-size-base * 3;
+$headings-font-weight: bold;
+
+
+.nav-link:hover:not(.active) {
+    color: $secondary !important;
+}
+
+
+
+
+.navbar {
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-nav {
+   
+        .nav-item-text {
+            text-transform: uppercase;
+            font-size: .9em;
+            font-weight: 500;
+            letter-spacing: .075rem;
+        }
+    }
+}
+
+// .hero.row {
+.custom-outline-btn .btn .btn-primary {
+    &:hover {
+        background-color: transparent;
+        color: $primary;
+    }
+}
+
+.btn-light {
+    background-color: $gray-100;
+
+    &:hover {
+        background-color: transparent;
+        border-color: $body-color;
+    }
+}
+
+// }
+.btn-primary {
+    &:hover {
+        background-color: transparent !important;
+        color: $primary !important;
+    }
+}
+
+.btn-light {
+    background-color: $gray-100 !important;
+
+    &:hover {
+        background-color: transparent !important;
+        border-color: $body-color !important;
+    }
+}
+
+.btn-secondary {
+    color: #fff !important;
+
+    &:hover {
+        background-color: transparent !important;
+        color: $secondary !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hero.row {
+        flex-direction: column-reverse;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .hero.row {
+        text-align: center;
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
