@@ -17,6 +17,10 @@ $btn-padding-y: .4rem;
 $h1-font-size: $font-size-base * 3;
 $headings-font-weight: bold;
 
+p {
+    padding: 0 2rem;
+}
+
 // Nav Section
 .nav-link:hover:not(.active) {
     color: $secondary !important;
@@ -55,9 +59,15 @@ $headings-font-weight: bold;
 }
 
 // Button Customization
-.btn-primary {
+.btn {
+    font-weight: 500 !important;
     &:hover {
         background-color: transparent !important;
+    }
+}
+
+.btn-primary {
+    &:hover {
         color: $primary !important;
     }
 }
@@ -66,7 +76,6 @@ $headings-font-weight: bold;
     background-color: $gray-100 !important;
 
     &:hover {
-        background-color: transparent !important;
         border-color: $body-color !important;
     }
 }
@@ -75,14 +84,13 @@ $headings-font-weight: bold;
     color: #fff !important;
 
     &:hover {
-        background-color: transparent !important;
         color: $secondary !important;
     }
 }
 
 // Features Tab Section
 @include media-breakpoint-up(md) {
-    .section-heading{
+    .section-heading {
         width: 50%;
     }
 }
@@ -109,6 +117,11 @@ $headings-font-weight: bold;
             opacity: 100%;
         }
     }
+}
+
+// Card Customization
+.card-link {
+    border-top: .4rem dotted $border-color !important;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+  <!-- Navbar -->
   <nav class="mb-5 navbar navbar-expand-md navbar-light">
     <div class="container my-0 my-md-5 mx-auto">
       <a class="navbar-brand" href="#">
@@ -24,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center">
           <li class="nav-item">
-            <a href="#" class="nav-link nav-item-text">Features</a>
+            <a href="#features" class="nav-link nav-item-text">Features</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link nav-item-text">Pricing</a>
@@ -41,7 +43,8 @@
     </div>
   </nav>
 
-  <div class="container my-5 mx-auto">
+  <!-- Hero Section -->
+  <div class="container mx-auto">
     <hero class="hero row align-items-center">
       <div class="mb-5 col-12 col-md-6 hero-txt py-md-5 pe-md-5">
         <h1 class="mb-3">A Simple Bookmark Manager</h1>
@@ -57,10 +60,10 @@
     </hero>
   </div>
 
-
+  <!-- Features Section -->
   <section class="container">
-    <div class="mx-auto text-center section-heading">
-      <h2 class="mb-3">Features</h2>
+    <div class="mx-auto text-center section-heading" id="features">
+      <h2 class="mb-3 pt-5">Features</h2>
       <p class="fs-5 opacity-75">Our aim is to make it quick and easy for you to access your favourite websites. Your
         bookmarks sync between your devices so you can access them on the go.</p>
     </div>
@@ -70,7 +73,7 @@
         <a href="#simple-bookmarking" data-bs-toggle="tab" class="px-5 py-4 nav-link active">Simple Bookmarking</a>
       </li>
       <li class="nav-item border-bottom">
-        <a href="#speedy-searching" data-bs-toggle="tab" class="px-5 py-4 nav-link">Speady Searching</a>
+        <a href="#speedy-searching" data-bs-toggle="tab" class="px-5 py-4 nav-link">Speedy Searching</a>
       </li>
       <li class="nav-item border-bottom">
         <a href="#easy-sharing" data-bs-toggle="tab" class="px-5 py-4 nav-link">Easy Sharing</a>
@@ -116,10 +119,66 @@
         </div>
       </div>
     </div>
-
   </section>
 
-  <footer style="height: 1200px;"></footer>
+  <!-- Downloads Section -->
+  <section class="container my-5">
+    <div class="mx-auto my-5 text-center section-heading" id="downloads">
+      <h2 class="mb-3 pt-5">Download the extension</h2>
+      <p class="fs-5 opacity-75">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+    </div>
+
+    <div class="row flex-md-row">
+      <div class="col-md-4">
+        <div class="card align-items-center border-0 rounded-4 shadow text-center">
+          <div class="card-img pt-5">
+            <img src="svg/logo-chrome.svg" alt="Google Chrome Logo">
+          </div>
+          <div class="card-header mt-3 border-0 bg-body pb-0">
+            <h4>Add to Chrome</h4>
+          </div>
+          <div class="card-body pt-0">
+            <p class="opacity-75">Minimum version 62</p>
+          </div>
+          <div class="card-link p-5">
+            <button type="button" class="btn btn-primary">Add & Install Extensions</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-4">
+        <div class="card align-items-center border-0 rounded-4 shadow text-center">
+          <div class="card-img pt-5">
+            <img src="svg/logo-firefox.svg" alt="Google Chrome Logo">
+          </div>
+          <div class="card-header mt-3 border-0 bg-body pb-0">
+            <h4>Add to Firefox</h4>
+          </div>
+          <div class="card-body pt-0">
+            <p class="opacity-75">Minimum version 55</p>
+          </div>
+          <div class="card-link p-5">
+            <button type="button" class="btn btn-primary">Add & Install Extensions</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-4 mt-md-5">
+        <div class="card align-items-center border-0 rounded-4 shadow text-center">
+          <div class="card-img pt-5">
+            <img src="svg/logo-opera.svg" alt="Google Chrome Logo">
+          </div>
+          <div class="card-header mt-3 border-0 bg-body pb-0">
+            <h4>Add to Opera</h4>
+          </div>
+          <div class="card-body pt-0">
+            <p class="opacity-75">Minimum version 46</p>
+          </div>
+          <div class="card-link p-5">
+            <button type="button" class="btn btn-primary">Add & Install Extensions</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>

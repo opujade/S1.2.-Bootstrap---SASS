@@ -11965,6 +11965,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+p {
+  padding: 0 2rem;
+}
+
 .nav-link:hover:not(.active) {
   color: #FA5959 !important;
 }
@@ -11992,8 +11996,14 @@ textarea.form-control-lg {
     text-align: center;
   }
 }
-.btn-primary:hover {
+.btn {
+  font-weight: 500 !important;
+}
+.btn:hover {
   background-color: transparent !important;
+}
+
+.btn-primary:hover {
   color: #5265E1 !important;
 }
 
@@ -12001,7 +12011,6 @@ textarea.form-control-lg {
   background-color: #f8f9fa !important;
 }
 .btn-light:hover {
-  background-color: transparent !important;
   border-color: #212529 !important;
 }
 
@@ -12009,7 +12018,6 @@ textarea.form-control-lg {
   color: #fff !important;
 }
 .btn-secondary:hover {
-  background-color: transparent !important;
   color: #FA5959 !important;
 }
 
@@ -12035,6 +12043,10 @@ textarea.form-control-lg {
 }
 #features-nav .nav-link.active:hover {
   opacity: 100%;
+}
+
+.card-link {
+  border-top: 0.4rem dotted #dee2e6 !important;
 }
 
 /*!
