@@ -1,0 +1,19 @@
+// Custom Variables
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+
+$btn-font-weight: 500;
+$btn-border-width: .15rem;
+$btn-padding-x: 2rem;
+$btn-padding-y: .4rem;
+$h1-font-size: 3rem;
+$headings-font-weight: bold;
+
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $secondary;

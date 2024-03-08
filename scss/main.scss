@@ -1,21 +1,10 @@
-@import "../node_modules/bootstrap/scss/mixins/breakpoints";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Import variables
+@import "abstracts/variables";
 
-// Custom Variables
-$primary: #5265E1;
-$secondary: #FA5959;
-
-$theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-);
-
-$btn-font-weight: bold;
-$btn-border-width: .15rem;
-$btn-padding-x: 2.5rem;
-$btn-padding-y: .4rem;
-$h1-font-size: $font-size-base * 3;
-$headings-font-weight: bold;
+// Bootstrap functions, vars and mixins
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
 p {
     padding: 0 2rem;
@@ -46,7 +35,7 @@ p {
 }
 
 // Hero Media Breakpoints
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
     .hero.row {
         flex-direction: column-reverse;
     }
@@ -60,7 +49,6 @@ p {
 
 // Button Customization
 .btn {
-    font-weight: 500 !important;
     &:hover {
         background-color: transparent !important;
     }
@@ -89,7 +77,7 @@ p {
 }
 
 // Features Tab Section
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
     .section-heading {
         width: 50%;
     }
@@ -122,6 +110,20 @@ p {
 // Card Customization
 .card-link {
     border-top: .4rem dotted $border-color !important;
+}
+
+//FAQ Accordion Customization
+@include media-breakpoint-up(lg) {
+    #faq-accordion {
+        width: 50%;
+    }
+}
+
+.accordion-button {
+    font-weight: 500;
+    &:hover {
+        color: $secondary;
+    }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
