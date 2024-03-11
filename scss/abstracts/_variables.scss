@@ -2,15 +2,22 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+$custom-colors: (
+    "footer": #242946
+);
+
 $theme-colors: (
     "primary": $primary,
     "secondary": $secondary
 );
 
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 $btn-font-weight: 500;
+$btn-font-size: .9rem;
 $btn-border-width: .15rem;
-$btn-padding-x: 2rem;
-$btn-padding-y: .4rem;
+$btn-padding-x: 1.5rem;
+$btn-padding-y: .5rem;
 $h1-font-size: 3rem;
 $headings-font-weight: bold;
 
