@@ -32,6 +32,17 @@ p {
       letter-spacing: 0.075rem;
     }
   }
+  .modal-body {
+    .nav-link,.btn{
+        color: #fff;
+        &:hover{
+            color: $secondary;
+        }
+    }
+    .btn-outline-light {
+      border-color: #fff;
+    }
+  }
 }
 
 // Hero Media Breakpoints
@@ -129,10 +140,10 @@ p {
 //Footer
 footer {
   color: white;
-  @include media-breakpoint-up(lg){
-      #footer-form-section {
-        width: 35%;
-      }
+  @include media-breakpoint-up(lg) {
+    #footer-form-section {
+      width: 35%;
+    }
   }
   h6  {
     font-weight: normal;
